@@ -1,13 +1,12 @@
-// firebase.js
 const firebaseConfig = {
   apiKey: "AIzaSyC2rNP1TzEw8SnJkFWCH3by6IfOvG6NbKA",
   authDomain: "cicak-8f655.firebaseapp.com",
   projectId: "cicak-8f655",
-  storageBucket: "cicak-8f655.firebasestorage.app",
+  storageBucket: "cicak-8f655.appspot.com", // 🔥 FIX
   messagingSenderId: "173909890044",
-  appId: "1:173909890044:web:af28f3e6e19000ae179879",
-  measurementId: "G-FWZKXYRNEE"
+  appId: "1:173909890044:web:af28f3e6e19000ae179879"
 };
+
 
 firebase.initializeApp(firebaseConfig);
 
@@ -30,4 +29,5 @@ function signup() {
     document.getElementById("password").value
   ).catch(alert);
 }
+
 
